@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta tags for character set and viewport settings -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Title of the document -->
+    <title>My Digital CV</title>
+    <!-- Link to external CSS stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Megrim:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Oxanium:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Link to external JavaScript file -->
+  </head>
+  <body>
+    <header>
+      <nav id="nav-bar">
+        <div class="list">
+          <a href="#about" class="nav-bar-button">About</a>
+          <a href="#experience" class="nav-bar-button">Experience</a>
+          <a href="#education" class="nav-bar-button">Education</a>
+          <a href="#skills" class="nav-bar-button">Skills</a>
+          <a href="#projects" class="nav-bar-button">Projects</a>
+        </div>
+        <!--Working on dropdown. Not completed yet. Need Javascript -->
+        <!-- <button class="menu">Menu</button>-->
+      </nav>
+
+      <section class="name-and-title">
+        <!-- Profile picture -->
+        <img
+          id="profile-pic"
+          src="images/profilepic2.jpg"
+          alt="Chris D. Oglesby"
+          width="200"
+          height="200"
+        />
+        <!-- Name and title -->
+        <div id="myname">
+          <h1>CHRIS OGLESBY</h1>
+        </div>
+        <div id="title">
+          <h2>Web Developer</h2>
+        </div>
+
+        <!-- Contact information -->
+
+        <div id="contact-info">
+          <div class="email">
+            <a href="mailto:chrisdoglesby@gmail.com"
+              ><h3>email. chrisdoglesby@gmail.com</h3></a
+            >
+          </div>
+          <div class="phone">
+            <h3>phone. 520.870.4125</h3>
+          </div>
+        </div>
+        <hr />
+      </section>
+    </header>
+
+    <section id="about">
+      <!-- About section -->
+      <h2>About</h2>
+      <p>
+        Passionate web developer excelling in HTML, CSS, and JavaScript while
+        constantly learning new technologies and frameworks like Python, Java,
+        Swift, C#, Go, CUDA, C++, OpenCL and SASS to stay current in the
+        industry. Experienced in building responsive and user-friendly websites
+        and applications.
+      </p>
+      <hr />
+    </section>
+    <section>
+      <div id="experience">
+        <!-- Experience section -->
+        <h2>Experience</h2>
+        <h3>Web Developer</h3>
+        <p>Freelance</p>
+        <p>2025 - Present</p>
+        <ul>
+          <li>Developed and maintained websites for clients</li>
+          <li>Optimized websites for speed and search engine optimization</li>
+        </ul>
+      </div>
+    </section>
+    <section>
+      <div id="education">
+        <!-- Education section -->
+        <h2>Education</h2>
+        <h3><a href="https://www.springboard.com/">Springboard</a></h3>
+        <p>Software Development Career Program</p>
+        <p>2025</p>
+        <ul>
+          <li>Learned HTML, CSS, and JavaScript</li>
+          <li>Developed websites and applications</li>
+          <li>Worked with databases and servers</li>
+        </ul>
+        <br />
+        <h3><a href="https://openclassrooms.com/en/">OpenClassrooms</a></h3>
+        <p>Web Development Career Program</p>
+        <p>2021 - 2022</p>
+        <ul>
+          <li>Learned HTML, CSS, and JavaScript</li>
+          <li>Developed several mock websites</li>
+          <li>Worked with databases and servers</li>
+          <li>Optimized websites for SEO</li>
+          <li>Used SASS to compile code</li>
+          <li>Created project repositories on GitHub for version control</li>
+        </ul>
+        <br />
+        <h3><a href="https://www.pima.edu/">Pima Community College</a></h3>
+        <p>Studied Business</p>
+        <p>2014 - 2016</p>
+        <h3><a href="https://thms.tusd1.org/">Tucson High School</a></h3>
+        <p>High School Diploma</p>
+        <p>2006</p>
+      </div>
+    </section>
+    <section>
+      <div id="skills">
+        <!-- Skills section -->
+        <h2>Skills</h2>
+        <ul>
+          <li><strong>HTML</strong></li>
+          <li><strong>CSS</strong></li>
+          <li><strong>JavaScript</strong></li>
+          <li><strong>Python</strong></li>
+          <li><strong>Java</strong></li>
+          <li><strong>Swift</strong></li>
+          <li><strong>C#</strong></li>
+          <li><strong>Go</strong></li>
+          <li><strong>CUDA</strong></li>
+          <li><strong>C++</strong></li>
+          <li><strong>OpenCL</strong></li>
+          <li><strong>SASS</strong></li>
+        </ul>
+      </div>
+    </section>
+    <section>
+      <!-- Projects section -->
+      <h2 id="projects">Projects (with links to GitHub repositories)</h2>
+      <!--Booki section-->
+      <div>
+        <h3>
+          <a href="https://github.com/chrisopo2021/ChrisOglesby_P2_08022021_A"
+            >BOOKI - Travel Accommodation Website Mockup</a
+          >
+        </h3>
+        <img src="images/bookilogo.png" alt="Booki" width="150" height="50" />
+        <ul>
+          <li>Built entire mockup with info and images supplied</li>
+          <li>Use of proper semantic HTML elements</li>
+          <li>Use of 'divs' to create tiles and buttons</li>
+          <li>Added hyperlinks to tiles</li>
+          <li>
+            Properly captioned and sized images with 'alt text' to enhance
+            accessibility
+          </li>
+          <li>Optimized for mobile viewing as well as desktop viewing</li>
+        </ul>
+      </div>
+      <hr />
+      <!--OhMyFood section-->
+      <div>
+        <h3>
+          <a href="https://github.com/chrisopo2021/ChrisOglesby_P3_08022021_A">
+            OHMYFOOD - Restaurant Website Mockup
+          </a>
+        </h3>
+        <img
+          src="images/ohmyfoodlogo.png"
+          alt="OhMyFood"
+          width="150"
+          height="50"
+        />
+        <ul>
+          <li>Built entire mockup with info and images supplied</li>
+          <li>Created eye catching and responsive animations with CSS</li>
+          <li>Aesthetically appealing layout with animated buttons</li>
+          <li>Proper timing used in animations for a natural feel</li>
+          <li>Use of proper semantic HTML elements</li>
+          <li>Use of 'divs' to create tiles and buttons</li>
+          <li>Added hyperlinks to tiles</li>
+          <li>
+            Properly captioned and sized images with 'alt text' to enhance
+            accessibility
+          </li>
+          <li>
+            Beautifully optimized for mobile viewing as well as desktop viewing
+          </li>
+        </ul>
+      </div>
+      <hr />
+      <!--GoMike Designs section-->
+      <div>
+        <h3>
+          <a href="https://github.com/chrisopo2021/ChrisOglesby_P4_08022021_A">
+            GoMike Designs - Atlanta Based Web Design Optimization and Audit
+          </a>
+        </h3>
+        <img
+          src="images/atlantalogo.png"
+          alt="GoMike Designs"
+          width="150"
+          height="50"
+        />
+
+        <h4>Optimized website for SEO and corrected the following issues:</h4>
+        <!-- Added a table to list the issues and solutions -->
+
+        <table class="center-table">
+          <thead>
+            <tr>
+              <th>Issue</th>
+              <!---Issue that needed to be fixed-->
+              <th>Solution</th>
+              <!---Solution to the issue-->
+            </tr>
+          </thead>
+          <tbody>
+            <!--Body shows entries for issues and solutions-->
+            <tr>
+              <td>Serve images in next-gen formats</td>
+              <td>Updated image files from .jpg to .avif</td>
+            </tr>
+            <tr>
+              <td>Efficiently encode images</td>
+              <td>Compressed images</td>
+            </tr>
+            <tr>
+              <td>Properly size images</td>
+              <td>
+                Sized images to only be as large as needed and added specific
+                heights and widths
+              </td>
+            </tr>
+            <tr>
+              <td>Eliminate render-blocking resources</td>
+              <td>Added ‘deferred execution’ to scripts</td>
+            </tr>
+            <tr>
+              <td>
+                Background and Foreground do not have sufficient contrast ratio
+              </td>
+              <td>Updated colors to contrast better</td>
+            </tr>
+            <tr>
+              <td>
+                html element does not have valid attribute for its lang
+                attribute
+              </td>
+              <td>Updated language</td>
+            </tr>
+            <tr>
+              <td>Links do not have discernable names</td>
+              <td>Gave links a title</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <hr />
+      <!--Kanap Furniture section-->
+      <div>
+        <h3>
+          <a href="https://github.com/chrisopo2021/P5_Oglesby_Code">
+            Kanap Furniture Website Mockup
+          </a>
+        </h3>
+        <img
+          src="images/kanaplogo.png"
+          alt="Kanap Furniture"
+          width="150"
+          height="150"
+        />
+        <ul>
+          <li>Built entire mockup with info and images supplied</li>
+          <li>
+            Uses a back end server to supply website with individual product
+            details including name, picture, description and price
+          </li>
+          <li>
+            Allows users to add product to working shopping cart using
+            JavaScript
+          </li>
+          <li>Gives notification when product is added to cart</li>
+          <li>
+            Proper use of input fields which alert if incorrect format or user
+            data is entered
+          </li>
+          <li>Optimized for mobile and desktop viewing</li>
+          <li>Proper accessibility elements used</li>
+        </ul>
+      </div>
+      <hr />
+    </section>
+
+    <footer>
+      <!-- Contact section -->
+      <h2>Contact me!</h2>
+
+      <!-- Contact form section -->
+      <form action="#">
+        <!-- Name input field -->
+        <label for="name">Name:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Lance Free"
+        /><br />
+        <!-- Email input field -->
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="lancefree@freelance.com"
+          size="30"
+        /><br /><br />
+        <!-- Phone input field -->
+        <label for="phone">Phone:</label>
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          placeholder="123-456-7890"
+        /><br /><br />
+        <!-- Organization input field -->
+        <label for="organization">Organization:</label>
+        <input
+          type="text"
+          id="organization"
+          name="organization"
+          placeholder="Your Company/Organization Name"
+          size="30"
+        /><br /><br />
+        <!-- Preferred method of contact dropdown -->
+        <label for="preferred-contact">Preferred Method of Contact:</label>
+        <select id="preferred-contact" name="preferred-contact">
+          <option value="email">Email</option>
+          <option value="phone">Phone</option>
+          <option value="text">Text</option></select
+        ><br /><br />
+        <!-- Pet preference radio buttons -->
+        <label for="preferred-contact"
+          >Are you a cat person or a dog person?</label
+        >
+        <br /><br />
+        <input
+          type="radio"
+          id="cat"
+          name="pet"
+          value="cat"
+          class="custom-radio"
+        />
+        <label for="cat">Cat</label>
+        <input
+          type="radio"
+          id="dog"
+          name="pet"
+          value="dog"
+          class="custom-radio"
+        />
+
+        <label for="dog">Dog</label><br /><br />
+        <!-- Message textarea -->
+        <label for="message">Message:</label><br />
+        <textarea
+          id="message"
+          name="message"
+          rows="5"
+          cols="50"
+          placeholder="Your message here... Contact me for any questions or to discuss a project. I look forward to hearing from you!"
+          required
+        ></textarea
+        ><br /><br />
+        <!-- Submit and reset buttons -->
+        <input type="submit" value="Send" />
+        <input type="reset" value="Reset" />
+      </form>
+      <!-- Copyright section -->
+      <p>&copy; 2025 Christopher Daniel Oglesby</p>
+      <p>
+        HTML & CSS validated with
+        <a href="https://validator.w3.org/">W3C<sup>&reg;</sup></a>
+      </p>
+    </footer>
+  </body>
+</html>
