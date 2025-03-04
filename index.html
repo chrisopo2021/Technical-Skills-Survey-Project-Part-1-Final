@@ -27,19 +27,33 @@
       rel="stylesheet"
     />
     <!-- Link to external JavaScript file -->
+    <!-- <script>
+      function toggleMenu() {
+        const menuButton = document.querySelector(".list-dropdown");
+        menuButton.classList.toggle("active");
+      }
+    </script>
+    <!-- Commented out for now -->
   </head>
   <body>
     <header>
       <nav id="nav-bar">
         <div class="list">
           <a href="#about" class="nav-bar-button">About</a>
-          <a href="#experience" class="nav-bar-button">Experience</a>
           <a href="#education" class="nav-bar-button">Education</a>
           <a href="#skills" class="nav-bar-button">Skills</a>
           <a href="#projects" class="nav-bar-button">Projects</a>
         </div>
-        <!--Working on dropdown. Not completed yet. Need Javascript -->
-        <!-- <button class="menu">Menu</button>-->
+        <button class="menu">Menu</button>
+        <div class="list-dropdown">
+          <a href="#about" class="nav-bar-button-dropdown">About</a>
+          <a href="#experience" class="nav-bar-button-dropdown">Experience</a>
+          <a href="#education" class="nav-bar-button-dropdown">Education</a>
+          <a href="#skills" class="nav-bar-button-dropdown">Skills</a>
+          <a href="#projects" class="nav-bar-button-dropdown">Projects</a>
+        </div>
+
+        <!-- Table of Contents -->
       </nav>
 
       <section class="name-and-title">
@@ -62,13 +76,15 @@
         <!-- Contact information -->
 
         <div id="contact-info">
-          <a href="mailto:chrisdoglesby@gmail.com"
-            ><div class="email">email. chrisdoglesby@gmail.com</div></a
-          >
-
-          <div class="phone">phone. 520.870.4125</div>
+          <div id="email">
+            <a href="mailto:chrisdoglesby@gmail.com"
+              ><h3>email. chrisdoglesby@gmail.com</h3></a
+            >
+          </div>
+          <div id="phone">
+            <h3>phone. 520.870.4125</h3>
+          </div>
         </div>
-
         <hr />
       </section>
     </header>
@@ -367,6 +383,7 @@
           name="pet"
           value="cat"
           class="custom-radio"
+          id="radio1"
         />
         <label for="cat">Cat</label>
         <input
@@ -375,6 +392,7 @@
           name="pet"
           value="dog"
           class="custom-radio"
+          id="radio2"
         />
 
         <label for="dog">Dog</label><br /><br />
@@ -396,7 +414,7 @@
       <!-- Copyright section -->
       <p>&copy; 2025 Christopher Daniel Oglesby</p>
       <p>
-        HTML & CSS validated with
+        HTML validated with
         <a href="https://validator.w3.org/">W3C<sup>&reg;</sup></a>
       </p>
     </footer>
