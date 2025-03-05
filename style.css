@@ -1,4 +1,4 @@
-/* Style for the body element */
+/* General Styles */
 body {
     text-align: center;
     font-family: Oxanium, Helvetica, sans-serif;
@@ -10,16 +10,17 @@ body {
     margin-top: 4%;
 }
 
-
-
-/* Remove border from section element */
 section {
     margin: 10px;
     padding: 10px;
     box-sizing: border-box;
 }
 
-/* Style for h1 elements */
+hr {
+    margin: 10px;
+}
+
+/* Typography */
 h1 {
     color: #ddb655; 
     font-family: Orbitron, Arial, sans-serif;
@@ -29,14 +30,12 @@ h1 {
     text-shadow: #1f1f1b 1.4px 1.4px; 
     box-sizing: border-box;
     margin: 1px;
-    @media (max-width: 480px)
-    {
+    @media (max-width: 480px) {
        font-size: 25px;
        letter-spacing: 18px;
     }
 }
 
-/* Style for h2 elements */
 h2 {
     color: #ddb655; 
     font-family: Orbitron, Arial, sans-serif;  
@@ -47,13 +46,11 @@ h2 {
     margin: 10px;
     box-sizing: border-box;
     padding-bottom: 5px;
-    @media (max-width: 480px)
-    {
+    @media (max-width: 480px) {
        font-size: 20px;
     }
 }
 
-/* Style for h3 elements */
 h3 {
     color: #e1ddd3;
     font-family: Orbitron, Arial, sans-serif; 
@@ -61,20 +58,16 @@ h3 {
     font-weight: 800;
     text-shadow: #daa520 0.7px 0.7px; 
     box-sizing: border-box;
-    @media (max-width: 600px)
-    {
+    @media (max-width: 600px) {
        font-size: 90%;
        letter-spacing: 5px; 
-       
     }
-    @media (max-width: 480px)
-    {
+    @media (max-width: 480px) {
         font-size: 80%;
         letter-spacing: 4px;
     }
 }
 
-/* Style for h4 elements */
 h4 {
     color: #daa520; 
     font-family: Orbitron, Arial, sans-serif; 
@@ -83,7 +76,6 @@ h4 {
     box-sizing: border-box;
 }
 
-/* Style for paragraph elements */
 p {
     color: #e1ddd3;
     text-decoration: none;
@@ -92,7 +84,6 @@ p {
     box-sizing: border-box;
 }
 
-/* Style for anchor elements */
 a {
     color: #e1ddd3;
     text-decoration: none;
@@ -100,12 +91,12 @@ a {
     box-sizing: border-box;
 }
 
-hr {
-    margin: 10px;
+a:hover,
+a:focus {
+    text-decoration: none;
 }
 
-
-/* Style for tables with class 'center-table' */
+/* Table Styles */
 .center-table {
     margin-left: auto;
     margin-right: auto;
@@ -115,7 +106,6 @@ hr {
     box-sizing: border-box;
 }
 
-/* Style for table header cells */
 th {
     color: #daa520;
     font-family: Oxanium, Helvetica, sans-serif;
@@ -123,7 +113,6 @@ th {
     box-sizing: border-box;
 }
 
-/* Style for table data cells */
 td {
     color: #e1ddd3;
     font-family: Oxanium, Helvetica, sans-serif;
@@ -131,7 +120,7 @@ td {
     box-sizing: border-box;
 }
 
-/* Style for form elements */
+/* Form Styles */
 form {
     color: #e1ddd3;
     font-family: Oxanium, Helvetica, sans-serif;
@@ -139,7 +128,6 @@ form {
     box-sizing: border-box;
     text-align: center;
 }
-
 
 input, option, select {
     outline: none;
@@ -168,26 +156,24 @@ textarea {
   }
 }
 
+/* Profile Picture */
 #profile-pic {
     box-sizing: border-box;
     border-radius: 50%;
     border: 2px solid #daa520;
     display: flex;
-    @media (max-width: 800px)
-    {
+    @media (max-width: 800px) {
         display: inline;
     }
-
 }
 
+/* Name and Title */
 #myname {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     margin: 0;
     padding-left: 15px;
-    
-    
 }
 
 #title {
@@ -196,6 +182,7 @@ textarea {
     flex-wrap: wrap;
 }
 
+/* Contact Information */
 #contact-info {
     display: flex;
     outline: none;
@@ -208,26 +195,24 @@ textarea {
     margin-bottom: -25px;
     margin-top: 15px;
     margin-right: 10px;
-    @media (max-width: 480px)
-    {
+    @media (max-width: 480px) {
         margin-right: 0px;
         margin-left: 10px;
     }
-
 }
 
 #phone {
     margin-bottom: -10px;
     margin-right: 10px;
-    @media (max-width: 480px)
-    {
+    @media (max-width: 480px) {
         margin-right: 0px;
         margin-left: 5px;
-        
     }
 }
 
-
+#about, #skills, #education, #experience, #projects {
+    padding-top: 37px;
+}
 .email, .phone {
     color: #e1ddd3;
     font-family: Orbitron, Arial, sans-serif; 
@@ -237,13 +222,11 @@ textarea {
     box-sizing: border-box;
 }
 
-
-/* Hide the default radio button */
+/* Custom Radio Buttons */
 input[type="radio"] {
     display: none;
 }
 
-/* Create a custom radio button */
 input[type="radio"] + label {
     position: relative;
     padding-left: 30px;
@@ -254,7 +237,6 @@ input[type="radio"] + label {
     color: #e1ddd3;
 }
 
-/* Style the custom radio button */
 input[type="radio"] + label:before {
     content: "";
     position: absolute;
@@ -267,20 +249,13 @@ input[type="radio"] + label:before {
     background-color: #e1ddd3;
 }
 
-/* Style the checked state */
 input[type="radio"]:checked + label:before {
     background-color: #daa520;
     border-color: #000000;
 }
 
-
-/* Animation for nav bar */
-
-/* On page load, animate the nav with help from https://stackoverflow.com/questions/6805482/css3-transition-animation-on-load 
-and https://stackoverflow.com/questions/29786230/how-to-create-css3-bounce-effect /*/
-
-
-  nav {
+/* Navigation Bar */
+nav {
     position: fixed;
     top: 0;
     left: 0;
@@ -292,25 +267,15 @@ and https://stackoverflow.com/questions/29786230/how-to-create-css3-bounce-effec
     color: white;
     font-size: 16px;
     padding: 5px;
-    
+    animation: 1.5s cubic-bezier(0.68, -0.65, 0.27, 1.55) 0s 1 slideInFromLeft;
     @media (min-width: 800px) {
         padding: 10px 0px 22px 30px;
-      }
     }
-  
-  nav.is-hidden {
-    transform: translateY(-100%);
-  }
-  a {
-    color: inherit;
-    text-decoration: none;
-    &:hover,
-    &:focus {
-      text-decoration: none;
-    }
-  }
+}
 
-  /* Define the animation */
+nav.is-hidden {
+    transform: translateY(-100%);
+}
 
 @keyframes slideInFromLeft {
     0% {
@@ -319,12 +284,6 @@ and https://stackoverflow.com/questions/29786230/how-to-create-css3-bounce-effec
     100% {
       transform: translateX(0);
     }
-  }
-  
-nav {  
-    /* This section calls the slideInFromLeft animation we defined above */
-    animation: 1.5s cubic-bezier(0.68, -0.65, 0.27, 1.55) 0s 1 slideInFromLeft;
-
 }
 
 .nav-bar-button {
@@ -333,33 +292,34 @@ nav {
     position: relative;
     cursor: pointer;
     white-space: nowrap;
-    
     letter-spacing: 1px;
     font-size: 1.25em;
     &::before {
         content: " ";
         position: absolute;
         top: 0;
-        left:0;
-        height:100%;
+        left: 0;
+        height: 100%;
         width: 100%;
-        z-index:-1;
-        transition: .2s;
+        z-index: -1;
+        transition: 0.2s;
         border-radius: 25px;
     }
-        &:hover  {
-            &::before {
-                background: linear-gradient(to bottom, #ddb655,  #e0bf6c );
-                    box-shadow: 0px 3px 10px 0px black;
-                    transform: scale(1.5);
-            }
-            color:#45464c;  
+    &:hover {
+        &::before {
+            background: linear-gradient(to bottom, #ddb655, #e0bf6c);
+            box-shadow: 0px 3px 10px 0px black;
+            transform: scale(1.5);
+        }
+        color: #45464c;  
     }
-    
 }
 
- 
-/* Style for ordered and unordered lists, using flexbox */
+.nav-bar-button-dropdown {
+    font-size: large;
+}
+
+/* List Styles */
 ol, ul {
     list-style-position: inside;
     padding-left: 0;
@@ -371,23 +331,18 @@ ol, ul {
     box-sizing: border-box;
 }
 
-/* Style for list items within ordered and unordered lists */
 ol li, ul li {
     width: 100%;
     text-align: center;
     color: #e1ddd3;
     box-sizing: border-box;
-    
 }
 
-/* Change bullet color for unordered list items */
 ul li::marker {
     color: #daa520;
 }
 
-
-
-
+/* Dropdown Menu */
 .list {
     display: none; 
     margin-left: 40%;
@@ -401,7 +356,6 @@ ul li::marker {
         justify-content: space-evenly;
     }
 }
-
 
 .menu {
     display: none;
@@ -420,18 +374,13 @@ ul li::marker {
     @media (max-width: 800px) {
         display: flex;
         justify-content: space-evenly;
-        
     }
     @media (max-width: 480px) {
         display: flex;
         justify-content: space-evenly;
         margin-left: 83%;
-        
     }
 }
-
-
-
 
 .list-dropdown {
     display: none;
@@ -445,6 +394,16 @@ ul li::marker {
     padding-bottom: -1px;
 }
 
+.list-dropdown.active {
+    display: none;
+
+    @media (max-width: 800px) {
+        display: flex;
+
+    }
+    
+}
+
 .list-dropdown a {
     color: white;
     padding: 12px 16px;
@@ -456,24 +415,11 @@ ul li::marker {
     @media (max-width: 480px) {
         padding: 10px 16px;
     }
-
-
-}
-
-.menu:active + .list-dropdown,
-.menu:focus + .list-dropdown,
-.list-dropdown:hover {
-    display: flex;
-    
 }
 
 .list-dropdown a:hover {
     background-color: rgba(69, 70, 76, 0.7); /* 70% opacity background color */
     color: white; /* Ensure text color is white */
 }
-
-.nav-bar-button-dropdown {
-    font-size: large;
-    }
 
 
