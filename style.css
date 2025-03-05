@@ -162,10 +162,16 @@ textarea {
     border-radius: 50%;
     border: 2px solid #daa520;
     display: flex;
-    @media (max-width: 800px) {
-        display: inline;
-    }
+    margin: 10px;
 }
+    @media (max-width: 800px) {
+        #profile-pic {
+            display: inline;
+            animation: .8s ease-out 0s 1 slideInFromLeft;
+        }
+    }
+
+
 
 /* Name and Title */
 #myname {
