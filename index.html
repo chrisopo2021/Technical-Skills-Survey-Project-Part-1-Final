@@ -27,31 +27,7 @@
       rel="stylesheet"
     />
     <!-- Link to external JavaScript file -->
-    <script>
-      function toggleMenu() {
-        const menuButton = document.querySelector(".list-dropdown");
-        menuButton.classList.toggle("active");
-      }
-
-      document.addEventListener("click", function (event) {
-        const menuButton = document.querySelector(".menu");
-        const dropdown = document.querySelector(".list-dropdown");
-
-        if (
-          !menuButton.contains(event.target) &&
-          !dropdown.contains(event.target)
-        ) {
-          dropdown.classList.remove("active");
-        }
-      });
-
-      document.querySelectorAll(".list-dropdown a").forEach((link) => {
-        link.addEventListener("click", function () {
-          const dropdown = document.querySelector(".list-dropdown");
-          dropdown.classList.remove("active");
-        });
-      });
-    </script>
+    <script src="script.js"></script>
   </head>
   <body>
     <header>
@@ -107,6 +83,8 @@
         <hr />
       </section>
     </header>
+    <!-- Back to Top Button -->
+    <button id="back-to-top" onclick="scrollToTop()">↑</button>
 
     <section id="about">
       <!-- About section -->

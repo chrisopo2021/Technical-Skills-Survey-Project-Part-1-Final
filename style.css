@@ -428,4 +428,27 @@ ul li::marker {
     color: white; /* Ensure text color is white */
 }
 
+/* Back to Top Button */
+#back-to-top {
+    display: none; /* Hidden by default */
+    position: fixed;
+    bottom: 20px;
+    right: 40px;
+    z-index: 1000;
+    background-color: #daa520;
+    color: white;
+    border: none;
+    border-radius: 1%;
+    padding: 5px 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.3s ease-in-out;
+    font-family: Oxanium, Helvetica, sans-serif;    
+    letter-spacing: 2px;
 
+}
+
+
+#back-to-top:hover {
+    background-color: #e0bf6c;
+}
